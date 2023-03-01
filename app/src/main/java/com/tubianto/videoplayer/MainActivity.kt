@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
         mediaController.setAnchorView(videoView)
         videoView.setMediaController(mediaController)
 
-        // Mengatur loop video sehingga dapat diputar berulang kali
+        // Mengatur loop video sehingga otomatis diputar lagi ketika selesai
         videoView.setOnCompletionListener { mp ->
             mp.isLooping = true
             mp.start()
